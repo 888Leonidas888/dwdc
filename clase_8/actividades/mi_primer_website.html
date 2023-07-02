@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="shortcut icon" href="https://cdn3.iconfinder.com/data/icons/basicolor-file-types/24/138_html_website_code-512.png" type="image/x-icon">
+    <!-- Primer forma aplicar stilos -->
+    <link rel="stylesheet" href="./style/estilos.css" />
+
+    <!-- Segunda forma de aplicar stilos -->
+    <!-- <style>
+      h1 {
+        background-color: green;
+      }
+    </style> -->
+
+    <!-- <script type="text/javascript" src="./javscript.js"></script> -->
+  </head>
+  <body>
+    <div class="container-nav">
+      <nav class="navbar" role="navigation">
+        <a href="./mi_primer_website.html" class="brand">Mi página web</a>
+        <ul class="nav-links">
+          <li><a href="./mi_primer_website.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./services.html">Services</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="button-menu-toggle">Menu</button>
+    </div>
+
+
+
+    <div class="container">
+      <!-- Tercera forma de aplicar estilos -->
+      <!-- <h1 style="color: red">Bienvenidos a mi primer Website!</h1> -->
+      <div class="row">
+        <div class="column">
+          <h1 style="color: red">Bienvenidos a mi primer Website!</h1>
+          <p>Soy <strong>Jhony Escriba B.</strong>, ¡y esta es mi primera página web!</p>
+
+          <h2 style="color: green">Soy un H2</h2>
+          <p>
+            Estoy aprendiendo desarrollo web para crear sitios web visualmente
+            atrapantes y funcionales.
+          </p>
+        </div>
+        <div class="column">
+          <h2>Soy desarrollor web, o lo voy aser ...</h2>
+
+          <p>
+            A lo largo de este curso, estaré aprendiendo HTML, CSS y JavaScript.
+            Estos lenguajes me ayudarán a crear una base sólida en el desarrollo
+            web front-end.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores
+            laborum nihil perferendis quibusdam culpa quos, tempore consectetur
+            ratione officiis dolorem reiciendis beatae perspiciatis veritatis
+            aperiam voluptatem, dolor officia quia accusantium.
+          </p>
+        </div>
+        <div class="image-astro">
+          <img
+            src="https://2.bp.blogspot.com/-iDlfZIKK2b4/WDe50l_n6eI/AAAAAAAAAUs/Ss9LwmupR6k0tzILetALwYjQcDJR75zIACLcB/s1600/Time_to_Relax-wallpaper-10051661.jpg"
+            alt="astronauta"
+            height="400px"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="form-div">    
+      <form action="#" class="form-data">
+        <fieldset class="data">
+          <legend>Complete sus datos personales</legend>
+          <input type="text" id="name" placeholder="Nombres">
+          <input type="text" id="last-name" placeholder="Apellidos">
+          <input type="text" id="email" placeholder="Correo">
+          <label for="sexo">Sexo</label>
+          <select name="sexo" id="sexo">
+            <option value="seleccione">Seleccione una opción</option>
+            <option value="masculino">masculino</option>
+            <option value="femenino">femenino</option>
+          </select>
+        </fieldset>
+        <button id="btn-send">Enviar</button>
+      </form>
+    </div>
+    <script src="./javascript/javscript.js"></script>
+  </body>
+</html>

@@ -1,0 +1,172 @@
+* {
+  background-color: transparent;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.image-astro {
+  margin: auto;
+}
+
+.container {
+  max-width: 600px;
+  /* margin-top: 20px; */
+  margin: auto;
+  padding: 20px;
+  border: 1px solid salmon;
+}
+
+/* responsive */
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+
+.column {
+  flex: 1;
+  padding: 10px;
+}
+
+
+/*aplicando estilos formulario*/
+
+form{
+  margin: auto;
+  margin-top: 35px;
+  width: 400px;
+  height: 400px;
+}
+
+.data{
+  display: flex;
+  flex-direction: column;
+}
+
+input{
+  margin-top: 15px;
+  border: 1px solid rgb(80, 80, 80);
+  border-radius: 5px;
+}
+
+input:focus{
+  border: 1px solid rgb(80, 80, 80);
+}
+
+label{
+  margin-top: 15px;
+}
+
+select{
+  border-radius: 5px;
+}
+
+
+button{
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+  width: 80%;
+  height: 36px;
+  border-radius: 5px;
+}
+button:hover{
+  background-color: rgb(240,240,240);
+}
+
+/* Aplicando estilos a la barra de navegación */
+.container-nav {
+  display: flex;
+  padding: 10px;
+  height: 50px;
+  background-color: black;
+  margin-bottom: 25px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+li > a {
+  padding: 8px 24px;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.button-menu-toggle {
+  display: none;
+  /* background-color: white; */
+}
+
+.container-img{
+  margin: 25px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+img{
+  width: 400px;
+}
+
+@media (max-width: 768px) {
+  .column {
+    flex: 100%;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .button-menu-toggle {
+    display: block;
+    background-color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 0 24px;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .nav-links.nav-links-responsive {
+    position: absolute;
+    display: flex;
+    background-color: rgba(20, 20, 20, 0.95);
+    width: 100%;
+    height: 100%;
+    top: 70px;
+    flex-direction: column;
+    padding-top: 200px;
+    align-items: center;
+    gap: 70px;
+    font-size: 40px;
+  }
+}
+
+/* @media (max-width: 600px) {
+  .column {
+    flex: 100%;
+  }
+} */

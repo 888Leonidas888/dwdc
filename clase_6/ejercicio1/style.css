@@ -1,0 +1,39 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div{
+    border: 2px solid salmon;
+}
+
+.box-1{
+    background-color: aquamarine;
+}
+.box-2{
+    margin: 30px;
+    padding: 20px;
+    width: 400px;
+    height: 200px;
+    background-color: aqua;
+}
+
+.box-3{
+    height: 100%;
+    width: 100%;
+    background-color: blue;
+}
+
+.box-1:hover{
+    background-color: rgb(0,230,230);
+}
+
+.box-2:hover{
+    background-color: rgb(127,225,212);
+}
+
+.box-3:hover{
+background-color: rgb(0 , 0, 220);
+}

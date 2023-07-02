@@ -1,0 +1,40 @@
+<!-- 1. Abrir Visual Studio Code y crear un archivo HTML (aparte de tu sitio web en el que vienes trabajando), como por ejemplo: “ejercicio-1.html”.
+
+2. Dentro del archivo HTML, crear la estructura básica de un documento HTML agregando las etiquetas <html>, <head> y <body>.
+
+3. Dentro del <body>, agregar tres etiquetas <div> y anidarlas una dentro de la otra para crear una estructura en capas.
+
+4. Crear un nuevo archivo CSS (por ejemplo, “estilos.css”) y enlazarlo con el archivo HTML utilizando la etiqueta <link>.
+
+5. Aplicar los siguientes estilos CSS al "div del medio" utilizando estas propiedades:
+
+margin: 30px
+
+padding: 20px
+
+width: 400px (ancho)
+
+height: 200px (alto)
+
+6. Agregar un color de fondo diferente a cada uno de los tres “divs” utilizando la propiedad "background-color". Asegúrate de que cada uno tenga un color de fondo diferente.
+
+7. Lograr que el “div interno” ocupe todo el contenido del “div del medio” y que el borde del “div externo” coincida con el margin de 30px del “div del medio”. 
+
+En la estructura final deberías ver como los div están anidados y centrados uno dentro del otro y, al revisar el Box Model del “div del medio”, deberías poder observar como el padding y el margin coinciden con la distancia de separación entre los “divs”. -->
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio #1</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="box-1">
+      <div class="box-2">
+        <div class="box-3"></div>
+      </div>
+    </div>
+  </body>
+</html>

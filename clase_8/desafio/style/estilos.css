@@ -1,0 +1,152 @@
+* {
+  background-color: transparent;
+  box-sizing: border-box;
+  font-family: monospace;
+  padding: 0;
+  margin: 0;
+}
+
+.image-astro {
+  margin: auto;
+}
+
+.container {
+  max-width: 600px;
+  /* margin-top: 20px; */
+  margin: auto;
+  padding: 20px;
+  border: 1px solid salmon;
+}
+
+/* responsive */
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+
+.column {
+  flex: 1;
+  padding: 10px;
+}
+
+/* Aplicando estilos a la barra de navegación */
+.container-nav {
+  display: flex;
+  padding: 10px;
+  height: 50px;
+  background-color: black;
+  margin-bottom: 25px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+li > a {
+  padding: 8px 24px;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.button-menu-toggle {
+  display: none;
+  /* background-color: white; */
+}
+
+.container-img {
+  margin: 25px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+img {
+  width: 400px;
+}
+
+.video-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  padding: 50px;
+}
+
+.container {
+  min-height: calc(100vh - 200px - 50px);
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f1f1f1;
+  min-height: 200px;
+  text-align: center;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .column {
+    flex: 100%;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .button-menu-toggle {
+    display: block;
+    background-color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 0 24px;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .nav-links.nav-links-responsive {
+    position: absolute;
+    display: flex;
+    background-color: rgba(20, 20, 20, 0.95);
+    width: 100%;
+    height: 100%;
+    top: 50px;
+    flex-direction: column;
+    padding-top: 200px;
+    align-items: center;
+    gap: 70px;
+    font-size: 40px;
+  }
+
+  iframe,
+  video {
+    max-width: 90%;
+  }
+  .video-container {
+    padding: 10px;
+    gap: 5px;
+  }
+}

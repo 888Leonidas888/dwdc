@@ -1,0 +1,94 @@
+/* -----------------Estilos generales --------------------*/
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    height: 400px;
+    width: 500px;
+    border: 3px dashed darkkhaki;
+    margin: auto;
+}
+
+/* Aplicando tamaño a todos los div hijos */
+.box-small{
+    height: 80px;
+    width: 80px;
+}
+
+/* Color a cada div dentro del elemento con la clase container */
+.container div:nth-child(1){
+    background-color: coral;
+}
+
+.container div:nth-child(2){
+    background-color: cornflowerblue;
+}
+
+.container div:nth-child(3){
+    background-color: darkseagreen;
+}
+
+h2{
+    margin-top: 35px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+/* -----------------Fin de estilos generales --------------------*/
+
+
+
+
+
+
+/* aplicando estilo al container-1 e hijos------------------------- */
+#container-1{
+    padding: 0 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+
+#box-1{
+    align-self: flex-start;
+}
+
+#box-2{
+    align-self: center;
+}
+
+#box-3{
+    align-self: flex-end;
+}
+/* fin container 1 -----------------------------------------------------*/
+
+
+
+
+
+
+
+/* Aplicando estilos al container-2 e hijos------------------------------*/
+#container-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#container-2 div:nth-child(2){
+    width: 100%;
+}
+/* fin container 2 ------------------------------------------------------*/
+
+
+
+
+
+/* Aplicando estilos al container-3 e hijos -----------------------------*/
+#container-3{
+    display: flex;
+    flex-flow: column-reverse;
+    align-items: end;
+}
+/* fin container 3------------------------------------------------------ */
